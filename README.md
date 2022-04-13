@@ -5,10 +5,11 @@
 
 ## Description
 This project is to create a virtual desktop assistant similar to Microsoft's Cortana.
-Vocal Recognition will be the highlight of this project.
+Some highlights of the project will include accurate speech recognition, basic user interaction functions,
+& potentially safety features such as secure password storage and password suggestion.
 
 # Functions and tasks that will be implemented
-    [1] Use vocal recognition to understand and parse out user specifed actions such as:
+    [1] Use speech recognition to understand and parse out user specifed actions such as:
         "Open new Word Document", "Delete Folder Tools", "Empty Recycling Bin"
       
     [2] Implement the previously parsed tasks.
