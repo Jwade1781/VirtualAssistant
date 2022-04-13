@@ -30,7 +30,7 @@ def Install_Imports():
     import subprocess, sys
     if sys.argv[1].lower() == 'true':
         print("Installing imports")
-        imports = ['', '']
+        imports = ['speechrecognition', 'pyaudio']
 
         for i in range (len(imports)):
             subprocess.call([sys.executable, "-m", "pip", "install", imports[i]])
