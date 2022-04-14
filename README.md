@@ -17,7 +17,7 @@ Some highlights of the project will include accurate speech recognition, basic u
     [3] Implement periodic emotion detection using the users camera. This could be used to
         offer advice or give relevant quotes that may aid the user.
     
-# Dependencies (Tested versions in brackets
+# Dependencies [Tested versions in brackets]
     [1] Python 3 [3.9]
     [2] PyAudio [0.2.11] 
     [3] SpeechRecognition [3.8.1]
