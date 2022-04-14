@@ -17,11 +17,13 @@ Some highlights of the project will include accurate speech recognition, basic u
     [3] Implement periodic emotion detection using the users camera. This could be used to
         offer advice or give relevant quotes that may aid the user.
     
-# Dependencies (Tested versions in brackets)
-    [1] N/A
+# Dependencies (Tested versions in brackets
+    [1] Python 3 [3.9]
+    [2] PyAudio [0.2.11] 
+    [3] SpeechRecognition [3.8.1]
 
-# Pip installs
-    [1] N/A
+# Quick Setup
+    Run /Setup/Setup.py to quickly install any dependent files & creation of any required additional folders. Uses pip for installation.
 
 # How to Run Programs 
 Setup the directories && Install Dependencies
