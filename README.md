@@ -27,5 +27,11 @@ Some highlights of the project will include accurate speech recognition, basic u
 
 # How to Run Programs 
 Setup the directories && Install Dependencies
-
     python ./Setup.py 'Install Required Modules (True/False)'
+
+
+# TODO
+[1] Create GUI using WPF or Electron & implement method that allows it to communicate with the python scripts. This will give the project a more user friendly interface     than running straight from the command line.
+
+[2] Implement more functions that the user is able to carry out. File: /src/DesktopActions.py
+[3] Investigate Speech Recognition accuracy. Seems to give inaccurate results at times, could be related to ambient noise. File: /src/SpeechRecognition.py
