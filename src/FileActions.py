@@ -13,12 +13,11 @@ class FileActions:
             return True
         
         except FileExistsError:
-            print("File not created: Prexisting file found\t")
-            file.close()
+            self.ReportError("Cannot Add File: Prexisting file found", "AddFile(self, fileName: str)->bool", fileName)
             return False
         
         except:
-            print("Unexpected Error")
+            self.ReportError("Unexpected Error occured in AddFile", "AddFile(self, fileName: str)->bool", fileName)
             return False
               
     def AddFolder(self, folderName: str)->bool:
@@ -34,7 +33,7 @@ class FileActions:
                 return True
             
         except:
-            print("No File/Folder Exists")
+            self.ReportError("No File/Folder Exists to Delete", "Delete(self, fileName: str)->bool", fileName)
             return False
     
     def OpenFileExplorer(self, path: str)->bool:
@@ -44,5 +43,14 @@ class FileActions:
             return True
         
         except:
-            print("Error occured upon opening the given path: " + path)
+            self.ReportError("Error occured upon opening the given path: " + path, "OpenFileExplorer(self, path: str)->bool", path)
             return False
+        
+    def ReportError(self, errorDescrip: str, errorFunction: str, argument: str):
+        import os
+        from ErrorLogger import ErrorLogger
+        errorFile = os.getcwd()
+        
+        ErrorLogger(errorDescrip, errorFunction, errorFile, argument)
+        
+        

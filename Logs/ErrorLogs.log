@@ -1,0 +1,7 @@
+======================================================================================================
+[April 17, 2022] [00 00 00]	Source File: C:\Users\Jeremy\Desktop\DesktopAssistant\Test
+				Function: AddFile(self, fileName: str)->bool
+				Description: Cannot Add File: Prexisting file found
+				Arguments: file
+======================================================================================================
+
