@@ -30,7 +30,7 @@ def Install_Imports():
     import subprocess, sys
     if sys.argv[1].lower() == 'true':
         print("Installing imports")
-        imports = ['speechrecognition', 'pyaudio', 'pocketsphinx', 'pywin32', 'flask']
+        imports = ['speechrecognition', 'pyaudio', 'pocketsphinx', 'pywin32', 'flask', 'celery']
 
         for i in range (len(imports)):
             subprocess.call([sys.executable, "-m", "pip", "install", imports[i]])
